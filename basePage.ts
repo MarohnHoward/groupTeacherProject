@@ -22,7 +22,7 @@ export class BasePage {
         else if (this.url) return await this.driver.get(this.url)
         else return Promise.reject('You need a url to test the page please add one in your page objects')
     }
-
+// commenting for merge
     async getElement(elementBy: By): Promise<WebElement> {
         await this.driver.wait(until.elementLocated(elementBy))
         let element = await this.driver.findElement(elementBy)
