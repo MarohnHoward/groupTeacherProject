@@ -15,6 +15,7 @@ export class BasePage {
         else this.driver = new Builder().withCapabilities(Capabilities.chrome()).build()
         if(options && options.url) this.url = options.url
     }
+    // test this is for merging 
     
     async navigate(url?: string): Promise<void> {
         if (url) return await this.driver.get(url)
