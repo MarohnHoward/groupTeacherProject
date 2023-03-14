@@ -29,7 +29,7 @@ export class BasePage {
         await this.driver.wait(until.elementIsVisible(element))
         return element 
     }
-// another merge 
+// another merge 100
     async click(elementBy: By): Promise<void> {
         return(await this.getElement(elementBy)).click()
     }
